@@ -1,12 +1,8 @@
 
 def decorater_function(msg):
-    message = msg  # free variable
-
     def wrapper_function():
-        print(message)
+        print(msg)
     return wrapper_function
 
-hi_p = decorater_function("hi")
-bye_p = decorater_function("bye")
-hi_p()
-bye_p()
+def display():
+    print(f"This is mesaage: {msg}")
