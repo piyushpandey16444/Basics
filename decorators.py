@@ -4,7 +4,7 @@ def decorater_function():
 
     def wrapper_function():
         print(message)
-    return wrapper_function()
+    return wrapper_function
 
 p = decorater_function()
-# p()
+p()
