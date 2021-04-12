@@ -1,18 +1,17 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
-from django.http import HttpResponseRedirect
+from .forms import CreateUserForm
 
 
 def signup_view(request):
 
     if request.method == "GET":
-        form = UserCreationForm()
+        form = CreateUserForm()
 
     elif request.method == "POST":
-        form = UserCreationForm(request.POST)
+        form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
-            form = UserCreationForm()
+            form = CreateUserForm()
 
     context = {
         'form': form,
