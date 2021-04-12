@@ -1,4 +1,3 @@
-
 def decorater_function(original_function):
     """
     This is the decorater function that takes original function
