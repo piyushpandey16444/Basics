@@ -1,8 +1,4 @@
 {
-    "python.pythonPath": ""
-}
-
-{
   "python.pythonPath": "C:\\Users\\HP\\.virtualenvs\\Basics-cr4SzN1h\\Scripts\\python.exe",
   "python.autoComplete.extraPaths": [
     "C:\\Users\\HP\\.virtualenvs\\Basics-cr4SzN1h\\Scripts\\python.exe"
