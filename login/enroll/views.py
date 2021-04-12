@@ -37,8 +37,10 @@ def login_view(request):
             username = form.cleaned_data.get('username', '')
             password = form.cleaned_data.get('password', '')
             user = authenticate(username=username, password=password)
+            print("user: ", user)
             if user is not None:
                 login(request, user)
+                messages.success(request, 'Login Successful !')
                 return HttpResponseRedirect('/profile/')
             else:
                 messages.warning(
