@@ -5,4 +5,11 @@
     {% endfor %}
     <input type="submit" value="Login">
 </form>
+<br>
+{% if messages %}
+    {% for msg in messages %}
+        {{msg}}
+    {% endfor %}
+{% endif %}
+<br>
 <a href="{% url 'signup' %}">Register</a>

@@ -41,7 +41,8 @@ def login_view(request):
                 login(request, user)
                 return HttpResponseRedirect('/profile/')
             else:
-                pass
+                messages.warning(
+                    request, 'Wrong credentials, May be case sensitive !')
     return render(request, 'enroll/login.html', {"form": form})
 
 
