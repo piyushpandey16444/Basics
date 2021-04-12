@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import CreateUserForm
+from django.contrib import messages
 
 
 def signup_view(request):
@@ -11,6 +12,7 @@ def signup_view(request):
         form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Account Created Successfully !')
             form = CreateUserForm()
 
     context = {
