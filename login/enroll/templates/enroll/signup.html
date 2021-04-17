@@ -32,5 +32,14 @@
       {% endfor %}
     {% endif %}
     <a href="{% url 'login' %}">Login</a>
+
+    <br>
+    {% if form.non_field_errors %}
+      {% for er in form.non_field_errors %}
+        {{er}} <br><br>
+      {% endfor %}
+    {% endif %}
+    <br>
+
   </body>
 </html>

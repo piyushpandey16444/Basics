@@ -7,9 +7,9 @@
 </form>
 <br>
 {% if form.non_field_errors %}
-        {% for er in form.non_field_errors %}
-            {{er}} <br><br>
-        {% endfor %}
-    {% endif %}
+    {% for er in form.non_field_errors %}
+        {{er}} <br><br>
+    {% endfor %}
+{% endif %}
 <br>
 <a href="{% url 'signup' %}">Register</a>
