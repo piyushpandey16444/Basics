@@ -24,6 +24,8 @@ HTTP Requests > GET, POST
 
 # Hooks
 
+All hooks
+
 # Ecosystem
 
 Redux (state management)
