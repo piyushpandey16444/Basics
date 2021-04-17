@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input | label</title>
-</head>
-<body>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .body {
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      .form {
+      }
+    </style>
+  </head>
+  <body>
     <h1>Input Animation</h1>
-</body>
+    <form action="">
+      <input type="text" name="name" id="name" autocomplete="off" required />
+      <label for="name" calss="label__name"
+        ><span class="content__name">Name</span></label
+      >
+    </form>
+  </body>
 </html>
