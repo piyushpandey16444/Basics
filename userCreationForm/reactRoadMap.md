@@ -23,3 +23,14 @@ portals
 HTTP Requests > GET, POST
 
 # Hooks
+
+# Ecosystem
+
+Redux (state management)
+Apollo Client (Graph QL)
+Routing > Router
+Styling > tailwind css
+form > formik, react form hook
+testing > jest + react testing library, cypress
+firebase
+react native
